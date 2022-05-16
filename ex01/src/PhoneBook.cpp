@@ -6,7 +6,7 @@
 /*   By: bguyot <bguyot@student.42mulhouse.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/12 08:36:09 by bguyot            #+#    #+#             */
-/*   Updated: 2022/05/16 12:57:05 by bguyot           ###   ########.fr       */
+/*   Updated: 2022/05/16 13:23:32 by bguyot           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ void	PhoneBook::add(Contact &contact)
 
 void	PhoneBook::print_contact(int contact)
 {
-	if (contact > this->nb_contact || contact < 0)
+	if (!this->nb_contact || contact > this->nb_contact || contact < 0)
 	{
 		std::cout << "Uwun't! There is no contact " << contact << '\n';
 		return ;
