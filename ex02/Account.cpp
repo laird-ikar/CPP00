@@ -6,7 +6,7 @@
 /*   By: bguyot <bguyot@student.42mulhouse.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/31 07:42:35 by bguyot            #+#    #+#             */
-/*   Updated: 2022/05/16 07:51:32 by bguyot           ###   ########.fr       */
+/*   Updated: 2022/05/16 11:01:53 by bguyot           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,14 +94,14 @@ void	Account::displayStatus(void) const
 
 void	Account::_displayTimestamp(void)
 {
-	// std::time_t t = std::time(0);   // get time now
-    // std::tm* now = std::localtime(&t);
-    // std::cout << '[' << now->tm_year + 1900 << std::setfill('0') << std::setw(2)
-	// 	<< now->tm_mon + 1 << std::setfill('0') << std::setw(2) << now->tm_mday
-	// 	<< '_' << std::setfill('0') << std::setw(2) << now->tm_hour
-	// 	<< std::setfill('0') << std::setw(2) << now->tm_min
-	// 	<< std::setfill('0') << std::setw(2) << now->tm_sec << "] ";
-	std::cout << "[19920104_091532] ";
+	std::time_t t = std::time(0);   // get time now
+    std::tm* now = std::localtime(&t);
+    std::cout << '[' << now->tm_year + 1900 << std::setfill('0') << std::setw(2)
+		<< now->tm_mon + 1 << std::setfill('0') << std::setw(2) << now->tm_mday
+		<< '_' << std::setfill('0') << std::setw(2) << now->tm_hour
+		<< std::setfill('0') << std::setw(2) << now->tm_min
+		<< std::setfill('0') << std::setw(2) << now->tm_sec << "] ";
+	// std::cout << "[19920104_091532] ";
 }
 
 Account::Account(void)
