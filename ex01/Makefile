@@ -6,7 +6,7 @@
 #    By: bguyot <bguyot@student.42mulhouse.fr>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/12 08:26:09 by bguyot            #+#    #+#              #
-#    Updated: 2022/05/13 07:48:46 by bguyot           ###   ########.fr        #
+#    Updated: 2022/05/13 08:42:56 by bguyot           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,7 +28,7 @@ RM		=	@rm -rf
 .cpp.o:
 	 $(CCXX) -c $(CXXFLAGS) -o $@ $<
 
-all:	$(NAME)
+all: $(NAME)
 
 $(NAME): $(OBJS)
 	$(CCXX) $(FLAGSXX) -o $(NAME) $(OBJS)
