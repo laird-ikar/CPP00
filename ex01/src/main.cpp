@@ -6,7 +6,7 @@
 /*   By: bguyot <bguyot@student.42mulhouse.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/12 08:36:11 by bguyot            #+#    #+#             */
-/*   Updated: 2022/05/13 07:48:05 by bguyot           ###   ########.fr       */
+/*   Updated: 2022/05/16 10:44:52 by bguyot           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 #include "../inc/Contact.hpp"
 #include "../inc/PhoneBook.hpp"
 
-int main()
+int main(void)
 {
 	std::string	user_input;
 	int			user_int_put;

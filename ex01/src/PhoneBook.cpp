@@ -6,7 +6,7 @@
 /*   By: bguyot <bguyot@student.42mulhouse.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/12 08:36:09 by bguyot            #+#    #+#             */
-/*   Updated: 2022/05/13 08:38:56 by bguyot           ###   ########.fr       */
+/*   Updated: 2022/05/16 10:50:05 by bguyot           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,9 +55,9 @@ void	PhoneBook::print_contact_list(void)
 	while (i < nb_contact)
 	{
 		std::cout
-		<< std::setw(10) << i << '|'
-		<< std::setw(10) << truncate(contact_list[i].get_firstname()) << '|'
-		<< std::setw(10) << truncate(contact_list[i].get_lastname()) << '|'
+		<< std::setw(10) << i << " | "
+		<< std::setw(10) << truncate(contact_list[i].get_firstname()) << " | "
+		<< std::setw(10) << truncate(contact_list[i].get_lastname()) << " | "
 		<< std::setw(10) << truncate(contact_list[i].get_nickname()) << '\n';
 		i++;
 	}

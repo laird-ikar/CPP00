@@ -6,7 +6,7 @@
 #    By: bguyot <bguyot@student.42mulhouse.fr>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/05 17:21:33 by bguyot            #+#    #+#              #
-#    Updated: 2022/05/12 08:14:52 by bguyot           ###   ########.fr        #
+#    Updated: 2022/05/16 10:17:19 by bguyot           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,7 +26,7 @@ RM		=	@rm -rf
 all:	$(NAME)
 
 $(NAME): $(OBJS)
-	$(CCXX) $(FLAGSXX) -o $(NAME) $(OBJS)
+	$(CCXX) $(CXXFLAGS) -o $(NAME) $(OBJS)
 	@printf "\e[36m\tCompilation \t[ ✓ ]\n\e[39m"
 
 clean:
