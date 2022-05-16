@@ -6,7 +6,7 @@
 /*   By: bguyot <bguyot@student.42mulhouse.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/12 08:36:09 by bguyot            #+#    #+#             */
-/*   Updated: 2022/05/16 10:50:05 by bguyot           ###   ########.fr       */
+/*   Updated: 2022/05/16 12:57:05 by bguyot           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,11 +40,11 @@ void	PhoneBook::print_contact(int contact)
 		std::cout << "Uwun't! There is no contact " << contact << '\n';
 		return ;
 	}
-	std::cout	<< contact_list[contact].get_firstname() << '\n'
-				<< contact_list[contact].get_lastname() << '\n'
-				<< contact_list[contact].get_nickname() << '\n'
-				<< contact_list[contact].get_phonenumber() << '\n'
-				<< contact_list[contact].get_darkestsecret() << '\n';
+	std::cout	<< "First name		" << contact_list[contact].get_firstname() << '\n'
+				<< "Last name		" << contact_list[contact].get_lastname() << '\n'
+				<< "Nickname		" << contact_list[contact].get_nickname() << '\n'
+				<< "Phone number	" << contact_list[contact].get_phonenumber() << '\n'
+				<< "Darkest secret	" << contact_list[contact].get_darkestsecret() << '\n';
 }
 
 void	PhoneBook::print_contact_list(void)
