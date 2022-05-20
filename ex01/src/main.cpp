@@ -6,7 +6,7 @@
 /*   By: bguyot <bguyot@student.42mulhouse.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/12 08:36:11 by bguyot            #+#    #+#             */
-/*   Updated: 2022/05/16 10:44:52 by bguyot           ###   ########.fr       */
+/*   Updated: 2022/05/18 10:57:27 by bguyot           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@
 int main(void)
 {
 	std::string	user_input;
-	int			user_int_put;
 	PhoneBook	phonebook;
 	Contact		new_contact;
 
@@ -49,8 +48,8 @@ int main(void)
 		{
 			phonebook.print_contact_list();
 			std::cout << "Please enter contact number" << '\n';
-			std::cin >> user_int_put;
-			phonebook.print_contact(user_int_put);
+			std::cin >> user_input;
+			phonebook.print_contact(std::atoi(user_input.c_str()));
 		}
 		else if (user_input == "EXIT")
 			exit(0);
